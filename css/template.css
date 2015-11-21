@@ -1,0 +1,35 @@
+body {
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+
+#navbar {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#title-wrapper {
+	padding-left: 50px;
+}
+
+#navbar-wrapper {
+	padding-left: 50px;
+}
+
+#content-wrapper {
+	text-align: justify;
+	padding-left: 65px;
+}
+
+.content-right-padding {
+	padding-right: 110px;
+}
+
+hr {
+	border-top:	2px solid;
+	border-top-color: #8E8E8E;
+}
+
+.date {
+	text-align: right;
+}
