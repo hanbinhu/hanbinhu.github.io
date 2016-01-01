@@ -40,45 +40,18 @@
     </nav>
 
     <div id="content-wrapper" class="container">
-      <h3 style="margin-bottom:20px; margin-top:10px"><strong>Selected Projects</strong></h3>
+      <h3 style="margin-bottom:20px; margin-top:10px"><strong>Research</strong></h3>
       <div class="row">
         <div class="col-xs-8 thumbnail">
-          <ul>
-            <li>
-              <a href="#Research">Research Projects</a>
-              <ul class="nestul">
-                <li><a href="#res1">Symbolic Sensitivity Method for Mismatch Analysis and CMRR Improvement</a></li>
-                <li><a href="#res2">Symbolic Topological Simplification Algorithm for Analog Circuits</a></li>
-                <li><a href="#res3">Incremental Symbolic Construction for Analog Circuit Topological Modeling</a></li>
-                <li><a href="#res4">Envelope Tracking Techniques for Power Amplifier Design</a></li>
-                <li><a href="#res5">Harmonic Distrotion Calibration for Pipeline ADC</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#Corporation">Corporation Projects</a>
-              <ul class="nestul">
-                <li><a href="#corp1">HSPICE Parser Data Structure Refactoring with C++  (Synopsys)</a></li>
-                <li><a href="#corp2">HSPICE Test Case Database Creation (Synopsys)</a></li>
-                <li><a href="#corp3">SPICE Model of Polyswitch Device (TE Connectivity)</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#Course">Course Projects</a>
-              <ul class="nestul">
-                <li><a href="#cor1">GUI Development for Kalman Filter & Information Fusion</a></li>
-                <li><a href="#cor2">Power Analysis for Switching Strategies in SAR ADC Design</a></li>
-                <li><a href="#cor3">Implementation and Observation of EKV 2.6 Model</a></li>
-                <li><a href="#cor4">A Low Voltage Low Power Sigma Delta Modulator Design</a></li>
-                <li><a href="#cor5">A Light-Weighted SPICE Simulator Design</a></li>
-                <li><a href="#cor6">A Processor Design using MIPS instruction set with Verilog</a></li>
-              </ul>
-            </li>
+          <ul style="margin-top:10px">
+            <li><a href="#res1">Symbolic Sensitivity Method for Mismatch Analysis and CMRR Improvement</a></li>
+            <li><a href="#res2">Symbolic Topological Simplification Algorithm for Analog Circuits</a></li>
+            <li><a href="#res3">Incremental Symbolic Construction for Analog Circuit Topological Modeling</a></li>
+            <li><a href="#res4">Envelope Tracking Techniques for Power Amplifier Design</a></li>
+            <li><a href="#res5">Harmonic Distrotion Calibration for Pipeline ADC</a></li>
           </ul>
         </div>
       </div>
-      
-      <h4 id="Research"><strong><font color="#1E78B8"><font size="5">R</font>esearch <font size="5">P</font>rojects</font></strong></h4>
-      <hr/>
       <div class="container content-right-padding">
         <div class="row project-title" id="res1">
           <div class="col-xs-9"><strong><font size="3">Symbolic Sensitivity Method for Mismatch Analysis and CMRR Improvement</font></strong></div>
@@ -103,115 +76,6 @@
         <div class="row project-title" id="res5">
           <div class="col-xs-8"><strong><font size="3">Harmonic Distrotion Calibration for Pipeline ADC</font></strong></div>
           <div class="col-xs-4 date"><i>November 2010 - October 2011</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-      </div>
-        
-      <h4 id="Corporation"><strong><font color="#1E78B8"><font size="5">C</font>orporation <font size="5">P</font>rojects</font></strong></h4>
-      <hr/>
-      <div class="container content-right-padding">
-        <div class="row project-title" id="corp1">
-          <div class="col-xs-9"><strong><font size="3">HSPICE Parser Data Structure Refactoring with C++</font></strong></div>
-          <div class="col-xs-3 date"><i>July 2015 - September 2015</i></div>
-        </div>
-        <p>Corporation Name: <strong>Synopsys, Inc.</strong> Shanghai Site. (Summer Internship)</p>
-        <div class="row">
-          <div class="col-xs-6"><p>Mentor: Mrs. Guoyu Yang and Mr. Yifei Huang, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
-          <div class="col-xs-6"><p>Manager: Mrs.Liping Zhu, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
-        </div>
-        <p>
-          Goal: HSPICE is one of the flagship products at Synopsys, however, there still remain large amount of Fortran codes in latest release of HSPICE wich brings maintainence difficulty and extra development cost.
-          My project was to refactor parser codes for three input commands (.set_sample_time, .dout, .store) in HSPICE from Fortran to C++. 
-          This work was awarded as <strong>one of the best internship projects</strong> at Synopsys, China in 2015, and was invited to be presented on R&D Demo Day.
-          [<a href="data/report/2015_Summer_Intern_Synopsys.pdf", target="_blank">Slides</a>]
-        </p>
-        <ul>
-          <li>Refactored 3 commond input routines in HSPICE from Fortran to C++.</li>
-          <li>Proposed the design methodology for future parser refactoring work and related software architecture.</li>
-          <li>Provided several common interfaces like token processing and expression evaluation for reference.</li>
-          <li>Reconstructed the simulation engine for transfer function simulation.</li>
-          <li>Passed all regression tests with 8993 test cases according QA report.</li>
-          <li>Detected and fixed 6 bugs in HSPICE, including two command malfunctions, one manual inconformity and three format issues.</li>
-        </ul>
-        <div class="row">
-          <div class="col-xs-6"><p><img src="image/Snps15_PT.png" class="imgBorder imgPadding" alt="Synopsys 2015" /></p></div>
-          <div class="col-xs-6"><p><img src="image/Snps15_Photo.png" class="imgBorder imgPadding" alt="Synopsys 2015" /></p></div>
-        </div>
-        <div class="row project-title" id="corp2">
-          <div class="col-xs-9"><strong><font size="3">HSPICE Test Case Database Creation</font></strong></div>
-          <div class="col-xs-3 date"><i>July 2014 - September 2014</i></div>
-        </div>
-        <p>Corporation Name: <strong>Synopsys, Inc.</strong> Shanghai Site. (Summer Internship)</p>
-        <div class="row">
-          <div class="col-xs-6"><p>Mentor: Mr. Lianpeng Sang, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
-          <div class="col-xs-6"><p>Manager: Mr. Deng Shi, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
-        </div>
-        <p>
-          Goal: Gather the feature information from 20000+ test cases in QA system to accelerate test procedure by providing problem-specific test cases in every regression tests.
-          [<a href="data/report/2014_Summer_Intern_Synopsys.pdf", target="_blank">Slides</a>]
-        </p>
-        <ul>
-          <li>Built a Perl script to gather netlist information for database construction from 20,586 test cases in quality assurance system.</li>
-          <li>Analyzed 674 test cases to recognize corresponding circuit types by manual analysis.</li>
-          <li>Detected 5 bugs in HSPICE and HSP_PACK2GO about file paths.</li>
-        </ul>
-        <div class="row">
-          <div class="col-xs-6"><p><img src="image/Snps14_PT.png" class="imgBorder imgPadding" alt="Synopsys 2014" /></p></div>
-          <div class="col-xs-6"><p><img src="image/Snps14_Photo.png" class="imgBorder imgPadding" alt="Synopsys 2014" /></p></div>
-        </div>
-        <div class="row project-title" id="corp3">
-          <div class="col-xs-8"><strong><font size="3">SPICE Model of Polyswitch Device</font></strong></div>
-          <div class="col-xs-4 date"><i>November 2014 - March 2015</i></div>
-        </div>
-        <p>Corporation Name: <strong>TE Connectivity Ltd.</strong> (College-Industry Cooperation)</p>
-        <p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a> & <a href="http://ic.sjtu.edu.cn/ic/en/faculty/wangqin/" target="_blank">Prof. Qin Wang</a>, <a href="http://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a></p>
-        <p>Mentor: Mr. Taichu Dai & Mr. Hongye Xia, <a href="http://www.te.com/usa-en/home.html" target="_blank">TE Connectivity Ltd.</a></p>
-        <p>
-          Goal: Build a SPICE model for Polymer Positive Temperature Coefficient (PPTC) resistor 
-          considering current limit and time to trip variation with temperature for PSPICE simulation. 
-          [<a href="data/report/2014_PPTC_TE_Connectivity.pdf" target="_blank">pdf</a>]
-        </p>
-        <ul>
-          <li>Designed a macro model for PPTC device taking account of three factors: temperature, current and time.</li>
-          <li>Proposed parameter extraction methods to obtain model data for a specific device.</li>
-          <li>Experimented the proposed model in both transient and temperature sweep simulation.</li>
-        </ul>
-        <div class="row">
-          <div class="col-xs-7"><p><img src="image/TE_BG.png" class="imgBorder" style="height:300px" alt="TE Connectivity 2014" /></p></div>
-          <div class="col-xs-5"><p><img src="image/TE_Circuit.png" class="imgBorder" style="height:300px" alt="TE Connectivity 2014" /></p></div>
-        </div>
-      </div>
-      <h4 id="Course"><strong><font color="#1E78B8"><font size="5">C</font>ourse <font size="5">P</font>rojects</font></strong></h4>
-      <hr/>
-      <div class="container content-right-padding">
-        <div class="row project-title" id="cor1">
-          <div class="col-xs-9"><strong><font size="3">GUI Development for Kalman Filter & Information Fusion</font></strong></div>
-          <div class="col-xs-3 date"><i>May 2014 - June 2014</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="cor2">
-          <div class="col-xs-8"><strong><font size="3">Power Analysis for Switching Strategies in SAR ADC Design</font></strong></div>
-          <div class="col-xs-4 date"><i>December 2013 - January 2014</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="cor3">
-          <div class="col-xs-8"><strong><font size="3">Implementation and Observation of EKV 2.6 Model</font></strong></div>
-          <div class="col-xs-4 date"><i>September 2013 - January 2014</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="cor4">
-          <div class="col-xs-9"><strong><font size="3">A Low Voltage Low Power Sigma Delta Modulator Design</font></strong></div>
-          <div class="col-xs-3 date"><i>July 2013</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="cor5">
-          <div class="col-xs-8"><strong><font size="3">A Light-Weighted SPICE Simulator Design</font></strong></div>
-          <div class="col-xs-4 date"><i>February 2012 - May 2012</i></div>
-        </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="cor6">
-          <div class="col-xs-8"><strong><font size="3">A Processor Design using MIPS instruction set with Verilog</font></strong></div>
-          <div class="col-xs-4 date"><i>December 2011 - January 2012</i></div>
         </div>
         <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
       </div>
