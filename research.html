@@ -47,8 +47,8 @@
             <li><a href="#res1">Symbolic Sensitivity Method for Mismatch Analysis and CMRR Improvement</a></li>
             <li><a href="#res2">Symbolic Topological Simplification Algorithm for Analog Circuits</a></li>
             <li><a href="#res3">Incremental Symbolic Construction for Analog Circuit Topological Modeling</a></li>
-            <li><a href="#res4">Envelope Tracking Techniques for Power Amplifier Design</a></li>
-            <li><a href="#res5">Harmonic Distrotion Calibration for Pipeline ADC</a></li>
+            <li><a href="#res4">Envelope tracking techniques used in RF Power amplifier</a></li>
+            <li><a href="#res5">Modeling and Calibration of High Speed, High Resolution ADC</a></li>
           </ul>
         </div>
       </div>
@@ -57,27 +57,110 @@
           <div class="col-xs-9"><strong><font size="3">Symbolic Sensitivity Method for Mismatch Analysis and CMRR Improvement</font></strong></div>
           <div class="col-xs-3 date"><i>March 2015 - October 2015</i></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <div class="row">
+          <div class="col-xs-6"><p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p></div>
+          <div class="col-xs-6"><p>Partner: Shuwen Deng</a></p></div>
+        </div>
+        <p>
+          Goal: Mismatch and Common Mode Rejection Ratio (CMRR) are becoming a concern in biopotential signal processing circuits in the application of weak signal acquisition using low-power and low-voltage design techniques. 
+          Proper tools are needed to quickly <strong>locate the sensitive mismatch components</strong> to improve the matching quality and CMRR.
+          This work proposed a symbolic sensitivity based technique that can help quickly localize the mismatch-sensitive components and suggest intuitive guide for resizing.
+          [<a href="data/paper/2016_ISCAS_MismatchCMRR.pdf" target="_blank">PDF</a>]
+        </p>
+        <ul>
+          <li>Proved the symbolic construction condition for multiport analysis in Graph-Pair Decision Diagram (GPDD) based on Binary Decision Diagram (BDD).</li>
+          <li>Reduced memory consumption for the GPDD structure by 50% on average and shortened the symbolic construction time by 3-4 times, using a multi-port symbolic construction approach.</li>
+          <li>Applied symbolic sensitivity computation to recognize most sensitive circuit elements to mismatch, instead of using the time-consuming Monte-Carlo analysis.</li>
+          <li>Optimized CMRR performance by means of sensitivity observation of peripheral capacitors, and reduced the mismatch due to parasitic elements in an operational amplifier.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/CalMP.png" class="imgBorder imgPadding" alt="CMRR Analysis" /><p>BDD structure for CMRR calculation.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/MPSens.png" class="imgBorder imgPadding" alt="CMRR Analysis" /><p>Senstivity results for a two stage opamp with unity feedback.</p></div>
+        </div>
         <div class="row project-title" id="res2">
           <div class="col-xs-9"><strong><font size="3">Symbolic Topological Simplification Algorithm for Analog Circuits</font></strong></div>
           <div class="col-xs-3 date"><i>March 2014 - June 2014</i></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p>
+        <p>Goal: Symbolically generated network functions for an analog integrated circuit are complicated in general. 
+          For this reason a variety of simplification methods have been proposed in the literature. 
+          In this work a novel topology-based symbolic simplification method was proposed, which was capable of <strong>systematically and automatically generating a simplified small-signal circuit</strong> together with a simplified symbolic network function.
+          [<a href="data/paper/2015_ISCAS_TopoSimp.pdf" target="_blank">PDF</a>]
+          [<a href="data/report/Topology_Simp_ISCAS.pdf" target="_blank">Slides</a>]
+        </p>
+        <ul>
+          <li>Proposed a topological symbolic simplification algorithm for analog circuits by automatically providing an interpretable simplified circuit topology for operational amplifier analysis; validated and experimented on a symbolic simulation engine.</li>
+          <li>Built the relationship between GPDD data structure and circuit topology by two types of elimination operation on symbols.</li>
+          <li>Obtained matching topologies automatically, compared to methods given in classical analog circuit textbooks, cut down nearly 80% symbols in original circuits.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/GPDDVSTopo.png" class="imgBorder imgPadding" alt="Topology Simplification" /><p>Two types of elimination operation on GPDD.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Topology_Simp_Result.png" class="imgBorder imgPadding" alt="Topology Simplification" /><p>Test result for topology simplification.</p></div>
+        </div>
         <div class="row project-title" id="res3">
           <div class="col-xs-9"><strong><font size="3">Incremental Symbolic Construction for Analog Circuit Topological Modeling</font></strong></div>
           <div class="col-xs-3 date"><i>October 2012 - June 2013</i></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p>
+        <p>
+          Goal: Symbolic methods for analog circuit analysis and modeling have been well studied.
+          However, little is known on how to create symbolic models incrementally while a circuit topology is being modified. 
+          This work proposed an incremental symbolic construction method applicable to incremental circuit topology change based on GPDD.
+          [<a href="data/paper/2013_ASICON_Incremental.pdf" target="_blank">PDF</a>]
+          [<a href="data/report/Incremental_Construction_ASICON.pdf" target="_blank">Slides</a>]
+        </p>
+        <ul>
+          <li>Developed a GPDD simulation engine to symbolically compute small-signal transfer function.</li>
+          <li>Implemented an efficient symbolic modification algorithm for GPDD based on symbol limit value when adjusting the circuit topology.</li>
+          <li>Proposed symbol reordering and novel sign reduction algorithms to significantly reduce memory consumption of the BDD structure by about 40% in the experiment.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Incremental_Example.png" class="imgBorder imgPadding" alt="Incremental Construction" /><p>Incremental construction example.</p></div>
+          <div class="col-xs-4" style="text-align:center; color:darkgrey"><img src="image/Sifting.png" class="imgBorder imgPadding" alt="Incremental Construction" /><p>Sifting effect by symbol reordering.</p></div>
+        </div>
         <div class="row project-title" id="res4">
-          <div class="col-xs-8"><strong><font size="3">Envelope Tracking Techniques for Power Amplifier Design</font></strong></div>
+          <div class="col-xs-8"><strong><font size="3">Envelope tracking techniques used in RF Power amplifier</font></strong></div>
           <div class="col-xs-4 date"><i>November 2011 - October 2012</i></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
-        <div class="row project-title" id="res5">
-          <div class="col-xs-8"><strong><font size="3">Harmonic Distrotion Calibration for Pipeline ADC</font></strong></div>
-          <div class="col-xs-4 date"><i>November 2010 - October 2011</i></div>
+        <div class="row">
+          <div class="col-xs-6"><p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/motingting/" target="_blank">Prof. Tingting Mo</a></p></div>
+          <div class="col-xs-6"><p>Partner: Jingyang Zhu and Bicheng Ying</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>
+          Goal: With the development of wireless communication, high efficiency power amplifiers (PAs) have become more and more important in the portable electronic instrument.
+          The work focused on the envelope tracking technique implemented on a “Class AB” PA with the OFDM 802.11 input to improve its average efficiency.
+          [<a href="data/report/2012_Envelope_Tracking.pdf" target="_blank">PDF</a>] (Chinese Version)
+        </p>
+        <ul>
+          <li>Built the mathematic model for envelope tracking principle in Simulink and verfied the system.</li>
+          <li>Designed a folded-cascode operation transconductance amplifier (OTA) with a GBW of 35.8MHz and a phase margin of 58&#176; used in envelope tracking system.</li>
+          <li>Integrated all the building blocks in the envelope tracking system, and verified the whole system by simulation.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-7" style="text-align:center; color:darkgrey"><img src="image/ET_Principle.jpg" class="imgBorder imgPadding" alt="ET for PA" /><p>Envelope tracking principle.</p></div>
+          <div class="col-xs-5" style="text-align:center; color:darkgrey"><img src="image/ET_res.png" class="imgBorder imgPadding" alt="ET for PA" />Envelope tracking experimental result.</div>
+        </div>
+        <div class="row project-title" id="res5">
+          <div class="col-xs-8"><strong><font size="3">Modeling and Calibration of High Speed, High Resolution ADC</font></strong></div>
+          <div class="col-xs-4 date"><i>October 2010 - November 2011</i></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6"><p>Advisor: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/zhoujianjun/" target="_blank">Prof. Jianjun Zhou</a></p></div>
+          <div class="col-xs-6"><p>Partner: Bokai Chen</a></p></div>
+        </div>
+        <p>
+          Goal: Analog-to-Digital Converter (ADC) is the key building block in many modern signal processing system, such as: wireless communication system and image acquisition system. 
+          The work established a system model of high speed and high resolution ADC with Simulink. Meanwhile, the project realized a harmonic distortion calibartion (HDC) algorithm.
+          [<a href="data/report/2011_Harmonic_Distortion_Calibration.pdf" target="_blank">PDF</a>] (Chinese Version)
+        </p>
+        <ul>
+          <li>Studied the fundamental background for ADC, especially the knowledge about sampling theory and pipeline ADC structure.</li>
+          <li>Built a Simulink model for a 14bit 100MHz-sampling-rate pipeline ADC with redundant sign digit (RSD) correction with SNR Measurement block, noise generation block, HDC algorithm block.</li>
+          <li>Verified and reproduced the harmonic distortion calibration algorithm for 3rd-order distortion in system level.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:darkgrey"><img src="image/HDC_Alg.png" class="imgBorder imgPadding" alt="HDC for ADC" /><p>Harmonic distortion calibration algorithm.</p></div>
+        </div>
       </div>
       
     </div><!-- /.container -->
