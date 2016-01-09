@@ -59,7 +59,7 @@
                 <li><a href="#cor2">Power Analysis for Switching Strategies in SAR ADC Design</a></li>
                 <li><a href="#cor3">Implementation and Observation of EKV 2.6 Model</a></li>
                 <li><a href="#cor4">A Low Voltage Low Power Sigma Delta Modulator Design</a></li>
-                <li><a href="#cor5">A Narrow-Band LNA Design</a></li>
+                <!--<li><a href="#cor5">A Narrow-Band LNA Design</a></li>-->
                 <li><a href="#cor6">A Light-Weighted SPICE Simulator Design</a></li>
                 <li><a href="#cor7">A Processor Design using MIPS Instruction Set with Verilog</a></li>
               </ul>
@@ -173,13 +173,24 @@
         </div>
         <div class="row project-title" id="cor2">
           <div class="col-xs-8"><strong><font size="3">Power Analysis for Switching Strategies in SAR ADC Design</font></strong></div>
-          <div class="col-xs-4 date"><i>December 2013 - January 2014</i></div>
+          <div class="col-xs-4 date"><i>January 2014</i></div>
         </div>
         <div class="row">
           <div class="col-xs-8"><p>Course: Circuit Design for Biomedical Implants (Master)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/bicasl/_Wang%20guoxing_en.html" target="_blank">Prof. Guoxing Wang</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Goal: Due to the straightforward mechanism, low power consumption and fairly fast sampling rate, Successive Approximation Register (SAR) ADC becomes one of the most popular ADC research topics in recent years.
+          This project is to figure out the power consumption difference for three types of switching sequences in DAC: common voltage down switching sequence, common voltage back switching sequence and common voltage fixed switching sequence.
+          [<a href="data/report/SAR_ADC_Switching.pdf" target="_blank">PDF</a>] (Chinese Version)
+        </p>
+        <ul>
+          <li>Built an analytic model for SAR ADC in C++ to simulate its sampling behavior.</li>
+          <li>Realized all the three switching sequences and the corresponding power conusmption model in C++ to estimate the power consumption of SAR ADC.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/SARADC.png" class="imgBorder imgPadding" alt="SAR ADC" /><p>DAC structure for SAR ADC.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/SARpower.png" class="imgBorder imgPadding" alt="SAR ADC" /><p>Power consumption comparison for different switching methods.</p></div>
+        </div>
         <div class="row project-title" id="cor3">
           <div class="col-xs-8"><strong><font size="3">Implementation and Observation of EKV 2.6 Model</font></strong></div>
           <div class="col-xs-4 date"><i>September 2013 - January 2014</i></div>
@@ -188,7 +199,19 @@
           <div class="col-xs-8"><p>Course: Mixed-Signal Circuit Design and Automation Methods (Master)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Goal: Low power low voltage design is increasingly popular in analog circuit design in recent years. 
+          EKV model and gm/ID methodology focused on this sort of design is verified in the past 20 years. 
+          This work illustrated the basic EKV model and explained several secondary effects considered in EKV 2.6 model. 
+          Furthermore, a CAD tool with GUI was implemented with an engine simulating EKV 2.6 model to facilitate g<sub>m</sub>/I<sub>D</sub> methodology.
+          [<a href="data/report/SPICE_report.pdf" target="_blank">PDF</a>]
+        </p>
+        <ul>
+          <li>Implemented a MOSFET device model with the EKV v2.6 model according to the official manual from <a href="http://ekv.epfl.ch/" target="_blank">EPFL</a>.</li>
+          <li>Developed an interactive GUI for easy interpretation of MOSFET behavior, and provided the relative g<sub>m</sub>/I<sub>D</sub> curve for engineers to observe the inversion degree and cultivate better sense of device data.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:darkgrey"><img src="image/EKVGUI.png" class="imgBorder imgPadding" alt="EKV Model" /><p>GUI for EKV model simulation.</p></div>
+        </div>
         <div class="row project-title" id="cor4">
           <div class="col-xs-9"><strong><font size="3">A Low Voltage Low Power Sigma Delta Modulator Design</font></strong></div>
           <div class="col-xs-3 date"><i>July 2013</i></div>
@@ -197,7 +220,20 @@
           <div class="col-xs-8"><p>Course: Advanced Topics on Analog Mixed-Mode Signal Circuit Design (Bachelor)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://www.mohamadsawan.org/" target="_blank">Prof. Mohamad Sawan</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Goal: Bio-medical electronics have made great progress in the past decade. 
+          Data converter plays an important role in the whole system, which stands for the bridge between analog and digital domain. 
+          In this work, a discrete-time sigma-delta modulator is presented with low power consumption and sufficient resolution in purpose of ECG signal sampling for pacemaker application.
+          [<a href="data/report/SDM_report.pdf" target="_blank">PDF</a>]
+        </p>
+        <ul>
+          <li>Designed a bulk-driven fully differential operational amplifier, working under 1.0V power supply and 245nA current, with an open loop gain of 73dB and a GBW of 226.6kHz.</li>
+          <li>Built a first-order Sigma-Delta Modulator (SDM) with an OSR of 20 and an SNR of 22.5dB, integrated a low power track and latch comparator with 39nA current.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/BDOTA.png" class="imgBorder imgPadding" style="height:275px" alt="Sigma-Delta ADC" /><p>Bulk-driven OTA design.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/SDMPSD.png" class="imgBorder imgPadding" style="height:275px" alt="Sigma-Delta ADC" /><p>Power spectral density (PSD) for the system.</p></div>
+        </div>
+<!--
         <div class="row project-title" id="cor5">
           <div class="col-xs-8"><strong><font size="3">A Narrow-Band LNA Design</font></strong></div>
           <div class="col-xs-4 date"><i>September 2012 - November 2012</i></div>
@@ -207,6 +243,7 @@
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/ic/carfic/en/members/jianjun-zhou/" target="_blank">Prof. Jianjun Zhou</a></p></div>
         </div>
         <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+    -->
         <div class="row project-title" id="cor6">
           <div class="col-xs-8"><strong><font size="3">A Light-Weighted SPICE Simulator Design</font></strong></div>
           <div class="col-xs-4 date"><i>February 2012 - May 2012</i></div>
@@ -215,7 +252,20 @@
           <div class="col-xs-8"><p>Course: Introduction to Design Automation (Bachelor)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <p>Goal:
+          SPICE is the acronym for Simulation Program with Integrated Circuit Emphasis, which is the most popular and reliable simulation program in analog and mixed-signal integrated circuit design. 
+          This project was to implement a light-weighted SPICE for circuits including linear and nonlinear devices in different simulation configurations.
+          [<a href="data/report/SPICE_Report_2012.pdf" target="_blank">PDF</a>] (Chinese Version)
+        </p>
+        <ul>
+          <li>Developed a SPICE simulation engine to analyze a circuit netlist whose sub-circuits contain both linear devices such as resistors and capacitors as well as nonlinear devices such as MOSFETs.</li>
+          <li>Built a compiler processing circuit netlist that includes sub-circuits and device models using Flex/Bison.</li>
+          <li>Performed operational point analysis, transient analysis and small signal analysis of analog circuits with various numerical algorithms including Backward Euler and Newton-Rhapson Iteration.</li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Trans_Alg.png" class="imgBorder imgPadding" alt="SPICE" /><p>Transient simulation procedure.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Inv_Res.png" class="imgBorder imgPadding" alt="SPICE" /><p>Simulated CMOS inverter results.</p></div>
+        </div>
         <div class="row project-title" id="cor7">
           <div class="col-xs-8"><strong><font size="3">A Processor Design using MIPS Instruction Set with Verilog</font></strong></div>
           <div class="col-xs-4 date"><i>December 2011 - January 2012</i></div>
@@ -224,7 +274,22 @@
           <div class="col-xs-8"><p>Course: Computer Organization and Embedded System (Bachelor)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/jiangjiang/" target="_blank">Prof. Jiang Jiang</a></p></div>
         </div>
-        <p>More information about this project will be <i><strong>coming soon</strong></i>.</p>
+        <div class="row">
+          <div class="col-xs-6">
+            <p>Goal: Build a processor using MIPS instruction set with a 5-stage pipeline architecture in Verilog considering branch prediction.
+              [<a href="data/report/MIPS_Report.pdf" target="_blank">PDF</a>] (Chinese Version)
+            </p>
+            <ul>
+              <li>Designed the top level architecture and assigned related works to group members.</li>
+              <li>Programmed the 'hazard detection', 'register', 'ALU', 'control', 'forwarding', 'sign extended' block in the system.</li>
+              <li>Provided the testbench and verified the whole system.</li>
+            </ul>
+            <div style="text-align:center; color:darkgrey">
+              <img src="image/MIPS_Architecture.png" class="imgBorder imgPadding" alt="MIPS" /><p>MIPS Architecture.</p>
+            </div>
+          </div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/MIPS_Instruction.png" class="imgBorder imgPadding" style="height:480px" alt="MIPS" /><p>MIPS Instruction Set.</p></div>
+        </div>
       </div>
       
     </div><!-- /.container -->
