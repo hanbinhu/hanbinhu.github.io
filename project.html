@@ -55,7 +55,7 @@
             <li>
               <a href="#Course">Course Projects</a>
               <ul class="nestul">
-                <li><a href="#cor1">GUI Development for Kalman Filter & Information Fusion</a></li>
+                <li><a href="#cor1">GUI Development for Kalman Filter & Data Fusion</a></li>
                 <li><a href="#cor2">Power Analysis for Switching Strategies in SAR ADC Design</a></li>
                 <li><a href="#cor3">Implementation and Observation of EKV 2.6 Model</a></li>
                 <li><a href="#cor4">A Low Voltage Low Power Sigma Delta Modulator Design</a></li>
@@ -81,9 +81,10 @@
           <div class="col-xs-6"><p>Manager: Mrs.Liping Zhu, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
         </div>
         <p>
-          Goal: HSPICE is one of the flagship products at Synopsys, however, there still remain large amount of Fortran codes in latest release of HSPICE wich brings maintainence difficulty and extra development cost.
-          My project was to refactor parser codes for three input commands (.set_sample_time, .dout, .store) in HSPICE from Fortran to C++. 
-          This work was awarded as <strong>one of the best internship projects</strong> at Synopsys, China in 2015, and was invited to be presented on R&D Demo Day.
+          Goal: HSPICE is one of the flagship products at Synopsys; however, there still remain a large amount of Fortran codes in its latest release of HSPICE wich increases maintenance difficulty and extra development cost.
+          This project was to refactor parser codes for three input commands (.set_sample_time, .dout, and .store) in HSPICE from Fortran to C++. 
+          This work was awarded as <strong>one of the best internship projects</strong> at Synopsys, China in 2015. 
+          I was invited to be present the project on Synopsys R&D Demo Day.
           [<a href="data/report/2015_Summer_Intern_Synopsys.pdf", target="_blank">Slides</a>]
         </p>
         <ul>
@@ -91,8 +92,8 @@
           <li>Proposed the design methodology for future parser refactoring work and related software architecture.</li>
           <li>Provided several common interfaces like token processing and expression evaluation for reference.</li>
           <li>Reconstructed the simulation engine for transfer function simulation.</li>
-          <li>Passed all regression tests with 8993 test cases according QA report.</li>
-          <li>Detected and fixed 6 bugs in HSPICE, including two command malfunctions, one manual inconformity and three format issues.</li>
+          <li>Passed all regression tests with 8,993 test cases according to the QA report.</li>
+          <li>Detected and fixed 6 bugs in HSPICE, including two command malfunctions, one manual inconformity and three format problems.</li>
         </ul>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Snps15_PT.png" class="imgBorder imgPadding" alt="Synopsys 2015" /><p>HSPICE top-level procedure for parser.</p></div>
@@ -108,11 +109,11 @@
           <div class="col-xs-6"><p>Manager: Mr. Deng Shi, <a href="http://www.synopsys.com/home.aspx" target="_blank">Synopsys, Inc.</a></p></div>
         </div>
         <p>
-          Goal: Gather the feature information from 20000+ test cases in QA system to accelerate test procedure by providing problem-specific test cases in every regression tests.
+          Goal: Gather feature information from 20,000+ test cases in the quality assurance (QA) system to accelerate the test procedure by providing problem-specific test cases in every regression test.
           [<a href="data/report/2014_Summer_Intern_Synopsys.pdf", target="_blank">Slides</a>]
         </p>
         <ul>
-          <li>Built a Perl script to gather netlist information for database construction from 20,586 test cases in quality assurance system.</li>
+          <li>Built a Perl script to gather netlist information for database construction from 20,586 test cases in the quality assurance (QA) system.</li>
           <li>Analyzed 674 test cases to recognize corresponding circuit types by manual analysis.</li>
           <li>Detected 5 bugs in HSPICE and HSP_PACK2GO about file paths.</li>
         </ul>
@@ -133,7 +134,7 @@
           [<a href="data/report/2014_PPTC_TE_Connectivity.pdf" target="_blank">PDF</a>]
         </p>
         <ul>
-          <li>Designed a macro model for PPTC device taking account of three factors: temperature, current and time.</li>
+          <li>Designed a macro model for a PPTC device by taking into account three factors: temperature, current and time.</li>
           <li>Proposed parameter extraction methods to obtain model data for a specific device.</li>
           <li>Experimented the proposed model in both transient and temperature sweep simulation.</li>
         </ul>
@@ -146,7 +147,7 @@
       <hr/>
       <div class="container content-right-padding">
         <div class="row project-title" id="cor1">
-          <div class="col-xs-9"><strong><font size="3">GUI Development for Kalman Filter & Information Fusion</font></strong></div>
+          <div class="col-xs-9"><strong><font size="3">GUI Development for Kalman Filter & Data Fusion</font></strong></div>
           <div class="col-xs-3 date"><i>May 2014 - June 2014</i></div>
         </div>
         <div class="row">
@@ -155,21 +156,21 @@
         </div>
         <div class="row">
           <div class="col-xs-6">
-            <p>Goal: The Kalman filter and information fusion theory play significant role in parameter estimation in engineering.
-              This project was to develop a vivid and interactive Graphical User Interface (GUI) for engineers to observe the experimental results of Kalman filter and the effect of information fusion for multiple sensors.
+            <p>Goal: The Kalman filter and multisensor data fusion play a significant role in parameter estimation in engineering.
+              This project was to develop a vivid and interactive Graphical User Interface (GUI) for engineers to observe the experimental results of Kalman filter and the effect of data fusion for multiple sensors.
               [<a href="data/report/GUI_Kalman_Filter.pdf" target="_blank">PDF</a>] (Chinese Version)
             </p>
             <ul>
               <li>Developed a MATLAB GUI for parameter estimation.</li>
-              <li>Realized the Kalman filter algorithm and information fusion algorithm for multiple sensors with different weighting methods.</li>
-              <li>Provided function for system's controllability and observability verification.</li>
+              <li>Realized the Kalman filter algorithm and data fusion algorithm for multiple sensors with different weighting methods.</li>
+              <li>Provided functions for system's controllability and observability verification.</li>
               <li>Checked the validity of all input data for software robustness.</li>
             </ul>
           </div>
-          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Kalman_GUI.png" class="imgBorder imgPadding" alt="Kalman" /><p>GUI for Kalman filter & information fusion.</p></div>
+          <div class="col-xs-6" style="text-align:center; color:darkgrey"><img src="image/Kalman_GUI.png" class="imgBorder imgPadding" alt="Kalman" /><p>GUI for Kalman filter & data fusion.</p></div>
         </div>
         <div class="row">
-          <div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:darkgrey"><img src="image/IF.png" class="imgBorder imgPadding" alt="Kalman" /><p>Information fusion results.</p></div>
+          <div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:darkgrey"><img src="image/IF.png" class="imgBorder imgPadding" alt="Kalman" /><p>Data fusion results.</p></div>
         </div>
         <div class="row project-title" id="cor2">
           <div class="col-xs-8"><strong><font size="3">Power Analysis for Switching Strategies in SAR ADC Design</font></strong></div>
@@ -179,8 +180,8 @@
           <div class="col-xs-8"><p>Course: Circuit Design for Biomedical Implants (Master)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/bicasl/_Wang%20guoxing_en.html" target="_blank">Prof. Guoxing Wang</a></p></div>
         </div>
-        <p>Goal: Due to the straightforward mechanism, low power consumption and fairly fast sampling rate, Successive Approximation Register (SAR) ADC becomes one of the most popular ADC research topics in recent years.
-          This project is to figure out the power consumption difference for three types of switching sequences in DAC: common voltage down switching sequence, common voltage back switching sequence and common voltage fixed switching sequence.
+        <p>Goal: Due to the straightforward mechanism, low power consumption, and fairly fast sampling rate, Successive Approximation Register (SAR) ADC has become one of the most popular ADC research topics in recent years.
+          This project was to figure out the power consumption difference for three types of switching sequences in DAC: common voltage down switching sequence, common voltage back switching sequence, and common voltage fixed switching sequence.
           [<a href="data/report/SAR_ADC_Switching.pdf" target="_blank">PDF</a>] (Chinese Version)
         </p>
         <ul>
@@ -199,15 +200,15 @@
           <div class="col-xs-8"><p>Course: Mixed-Signal Circuit Design and Automation Methods (Master)</p></div>
           <div class="col-xs-4"><p>Lecturer: <a href="http://ic.sjtu.edu.cn/ic/en/faculty/shiguoyong/" target="_blank">Prof. Guoyong Shi</a></p></div>
         </div>
-        <p>Goal: Low power low voltage design is increasingly popular in analog circuit design in recent years. 
-          EKV model and gm/ID methodology focused on this sort of design is verified in the past 20 years. 
-          This work illustrated the basic EKV model and explained several secondary effects considered in EKV 2.6 model. 
-          Furthermore, a CAD tool with GUI was implemented with an engine simulating EKV 2.6 model to facilitate g<sub>m</sub>/I<sub>D</sub> methodology.
+        <p>Goal: Low-power low-voltage design is increasingly popular in analog circuit design in recent years. 
+          EKV model and gm/ID methodology have been used to assist this type of design in the past 20 years. 
+          This work illustrated the basic EKV model and explained several secondary effects considered in the EKV v2.6 model. 
+          Furthermore, a CAD tool with GUI was implemented along with an engine that simulated the EKV 2.6 model to facilitate the g<sub>m</sub>/I<sub>D</sub> methodology.
           [<a href="data/report/SPICE_report.pdf" target="_blank">PDF</a>]
         </p>
         <ul>
           <li>Implemented a MOSFET device model with the EKV v2.6 model according to the official manual from <a href="http://ekv.epfl.ch/" target="_blank">EPFL</a>.</li>
-          <li>Developed an interactive GUI for easy interpretation of MOSFET behavior, and provided the relative g<sub>m</sub>/I<sub>D</sub> curve for engineers to observe the inversion degree and cultivate better sense of device data.</li>
+          <li>Developed an interactive GUI for easy interpretation of the MOSFET behavior, and provided the relative g<sub>m</sub>/I<sub>D</sub> curve for engineers to observe the inversion degree and cultivate a better sense of device data.</li>
         </ul>
         <div class="row">
           <div class="col-xs-offset-2 col-xs-8" style="text-align:center; color:darkgrey"><img src="image/EKVGUI.png" class="imgBorder imgPadding" alt="EKV Model" /><p>GUI for EKV model simulation.</p></div>
@@ -222,7 +223,7 @@
         </div>
         <p>Goal: Bio-medical electronics have made great progress in the past decade. 
           Data converter plays an important role in the whole system, which stands for the bridge between analog and digital domain. 
-          In this work, a discrete-time sigma-delta modulator is presented with low power consumption and sufficient resolution in purpose of ECG signal sampling for pacemaker application.
+          In this work, a discrete-time sigma-delta modulator was presented with low power consumption and sufficient resolution in purpose of ECG signal sampling for pacemaker application.
           [<a href="data/report/SDM_report.pdf" target="_blank">PDF</a>]
         </p>
         <ul>
